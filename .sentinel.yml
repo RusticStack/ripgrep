@@ -11,7 +11,7 @@ jobs:
     image: docker.io/library/rust:1.99.1-trixie@sha256:a5ab4292e80567dc92f642e2a7d63773ebd695b82b56e8f06dc8d6ecc5600b76
     runs_on: { labels: [egress] }
     resources: { cpu: 10, memory: 26GiB }
-    timeout: 60m
+    timeout: 90m
     env:
       CARGO_INCREMENTAL: "0"
       CARGO_HOME: /cache/cargo-home
